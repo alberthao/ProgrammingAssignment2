@@ -2,6 +2,7 @@
 ##  operator "<<-" is used here to assign a value to an object in an environment 
 ## that is different from the current environment.
 ##You can test this function by using statements follows:
+##source("cache.r")
 ##a<-makeCacheMatrix()
 ##a$set(matrix(c(0,1,3,3,-1,-1,1,1,2),3,3))
 ##cachSolve(a)
