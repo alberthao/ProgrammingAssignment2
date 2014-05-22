@@ -1,6 +1,12 @@
 ## This ia a function shows what we can do to save time by cache time-consuming computations.
 ##  operator "<<-" is used here to assign a value to an object in an environment 
 ## that is different from the current environment.
+##You can test this function by using such statement:
+##a<-makeCacheMatrix()
+##a$set(matrix(c(0,1,3,3,-1,-1,1,1,2),3,3))
+##cachSolve(a)
+##cachSolve(a), you can see here "getting cached data" before the results.
+
 makeCacheMatrix <- function(x = matrix()) {
   ##initialize
   m <- NULL
