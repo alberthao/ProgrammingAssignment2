@@ -18,11 +18,14 @@ makeCacheMatrix <- function(x = matrix()) {
        getcache = getcache)
 }
 cacheSolve <- function(x, ...) {
+  ##get solve matrix cache
   m <- x$getcache()
+  ##if cache exist, return "getting cached data" before the matrix
   if(!is.null(m)) {
     message("getting cached data")
     return(m)
   }
+  ##if cache not exist, calculate solve of the set matrix and send result to cache
   data <- x$get()
   m <- solve(data,...)
   x$setcache(m)
