@@ -10,7 +10,9 @@ makeCacheMatrix <- function(x = matrix()) {
   get <- function() x
   ## setcache function
   setcache <- function(mymatrix) m <<- mymatrix
+  ## matrixget function
   getcache <- function() m
+  ## set list of function name for later use
   list(set = set, get = get,
        setcache = setcache,
        getcache = getcache)
