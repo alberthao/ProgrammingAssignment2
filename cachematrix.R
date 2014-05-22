@@ -1,6 +1,6 @@
-## This ia a function shows what we can do to same time by cache time-consuming computations.
-## <<- operator is used here to assign a value to an object in an enviroment 
-## that is different from the current enviroment.
+## This ia a function shows what we can do to save time by cache time-consuming computations.
+##  operator "<<-" is used here to assign a value to an object in an environment 
+## that is different from the current environment.
 makeCacheMatrix <- function(x = matrix()) {
   ##initialize
   m <- NULL
